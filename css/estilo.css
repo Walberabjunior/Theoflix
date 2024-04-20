@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 80px;
+    position: absolute;
+}
+
+.logo {
+    flex: 6%;
+    text-align: right;
+    padding-right: 50px;
+    padding-top: 15px;
+    /* border: 1px solid blue; */
+
+}
+
+.logo img {
+    max-width: 35%;
+}
+
+.grupo-topo {
+    flex: 50%;
+    /* border: 1px solid red; */
+
+}
+
+.select-idioma {
+    padding: 7px 20px;
+    border-radius: 5px;
+    float: right;
+    margin: 1.2%;
+    background: none;
+    color: white;
+    font-size: medium;
+}
+
+.btn-topo {
+    background: #c11119;
+    padding: 6px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    float: right;
+    margin: 1.3% 27% 0 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* height: 80vh; */
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('../img/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 8px solid #232323;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+}
+
+.miolo {
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* border: 1px solid white; */
+}
+
+.miolo h1 {
+    color: white;
+    font-size: 4rem;
+    text-shadow: 1px 1px 5px black;
+    padding: 0;
+    margin: 0;
+}
+
+.miolo h2 {
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.miolo h3 {
+
+    font-weight: 400;
+    color: white;
+}
+
+.input-container {
+    text-align: center;
+}
+
+.input-email {
+    width: 450px;
+    height: 58px;
+    padding: 30px 40px 20px 10px;
+    margin-right: 5px;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    background: #1e1c18;
+    color: white;
+    opacity: 0.6;
+}
+
+.btn-email {
+    background: #c11119;
+    color: white;
+    border: 1px solid #c11119;
+    height: 60px;
+    width: 200px;
+    padding: 17px;
+    border-radius: 5px;
+    font-size: 24px;
+
+
+}
+
+section {
+    display: flex;
+    color: white;
+    border-bottom: 8px solid #232323;
+    margin-bottom: 1%;
+    /* border: 1px solid red; */
+
+}
+
+section img {
+
+    max-width: 100%;
+    /* border: 1px solid red; */
+}
+
+section h2 {
+    font-size: 3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    font-weight: 450;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 35px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pergunta {
+    width: 95%;
+    background: #2d2d2d;
+    padding: 15px 0px 15px 25px;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.resposta {
+    display: none;
+    width: 95%;
+    background: #232323;
+    padding: 15px 0px 15px 25px;
+    font-size: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.pergunta:hover {
+    background: #414141;
+}
+
+.icon {
+    float: right;
+    margin-right: 2%;
+}
+
+footer {
+    width: 100%;
+    color: gray;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer a {
+    color: gray;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.no-padding {
+    padding: 20px !important;
+}
+
+
+/**** RESPONSIVIDADE****/
+@media only screen and (min-width: 1px) and (max-width: 380px) {
+
+    .grupo-topo {
+        float: right !important;
+        align-items: right;
+    }
+
+    .select-idioma {
+        padding: 2px 7px 0 0 !important;
+        float: right;
+        font-size: 10px;
+    }
+
+    .btn-topo {
+        padding: 2px 7px 0 0 !important;
+        float: right !important;
+        font-size: 10px;
+    }
+
+    .miolo h1 {
+
+        font-size: 2rem;
+
+    }
+
+    .miolo h2 {
+        font-size: 1rem;
+    }
+
+    .miolo h3 {
+        font-size: 1rem;
+    }
+
+    .logo img {
+        min-width: 100px;
+        padding: 0;
+    }
+
+    .logo {
+        padding: 0 !important;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+        text-align: center;
+    }
+
+    .input-email {
+        width: 200px;
+        height: 15px;
+        padding-bottom: 27px;
+        padding-top: 25px;
+
+    }
+
+    .btn-email {
+        width: 100px;
+        font-size: 12px;
+        height: 58px;
+    }
+
+    .no-padding {
+        padding: 20px !important;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .select-idioma {
+        padding: 2px 7px !important;
+        float: right;
+        font-size: small;
+    }
+
+    .btn-topo {
+        padding: 2px 7px !important;
+        float: right;
+        font-size: small;
+    }
+
+
+    .miolo h1 {
+
+        font-size: 2rem;
+
+    }
+
+    .miolo h2 {
+        font-size: 1rem;
+    }
+
+    .miolo h3 {
+        font-size: 1rem;
+    }
+
+    .logo img {
+        max-width: 125%;
+    }
+
+    .logo {
+        padding: 0;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+        text-align: center;
+    }
+
+    .input-email {
+        width: 200px;
+        height: 15px;
+        padding-bottom: 27px;
+        padding-top: 25px;
+
+    }
+
+    .btn-email {
+        width: 100px;
+        font-size: 12px;
+        height: 58px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .miolo h1 {
+
+        font-size: 2.5rem;
+
+    }
+
+
+    .logo img {
+        max-width: 100%;
+
+    }
+
+
+    [class*="col-"] {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .miolo h1 {
+
+        font-size: 3rem;
+
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 950px) {
+    .logo img {
+        max-width: 85%;
+
+    }
+
+
+    [class*="col-"] {
+
+        text-align: left;
+    }
+
+    .container {
+        /* border: 1px solid red; */
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
+    .miolo h1 {
+
+        font-size: 3rem;
+
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .miolo h1 {
+
+        font-size: 3.5rem;
+
+    }
+
+
+    .logo img {
+        max-width: 70%;
+    }
+
+    .container {
+        /* border: 1px solid red; */
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+
+    .miolo h1 {
+
+        font-size: 4rem;
+
+    }
+
+    .logo img {
+        max-width: 55%;
+    }
+}
+
+@media only screen and (min-width: 2200px) {
+    .logo img {
+        max-width: 40%;
+    }
+}
